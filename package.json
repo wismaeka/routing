@@ -1,0 +1,27 @@
+{
+  "name": "round-robin",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "NODE_ENV=test vitest",
+    "test:coverage": "vitest run --coverage",
+    "dev": "nodemon ./src/routing/app.js",
+    "dev-api": "nodemon ./src/server/app.js",
+    "dev-delayed": "nodemon ./src/server-delayed/app.js",
+    "routing": "NODE_ENV=development nodemon ./src/routing/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitest/coverage-v8": "^1.5.3",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "node-fetch": "^3.3.2",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.5.3"
+  }
+}
